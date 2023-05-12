@@ -1,6 +1,6 @@
 {
   "name": "pointeger/magento2-module-attribute-finder",
-  "description": "",
+  "description": "This module adds a search bar on Attribue Set dropdown on product edit page and a configuraton in product configuartion that makes the attribute searchable if the attribue is select type.",
   "require": {
     "php": ">=7.3",
     "magento/framework": ">=103"
