@@ -1,5 +1,5 @@
 {
-  "name": "pointeger/magento2-module-attribute-finder",
+  "name": "pointeger/magento2-module-attribute",
   "description": "The pointeger module.",
   "require": {
     "php": ">=7.3",
