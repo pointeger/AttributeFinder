@@ -1,0 +1,27 @@
+{
+  "name": "pointeger/magento2-module-attribute-finder",
+  "description": "",
+  "require": {
+    "php": ">=7.3",
+    "magento/framework": ">=103"
+  },
+  "type": "magento2-module",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Pointeger",
+      "email": "tech@pointeger.com"
+    }
+  ],
+  "version": "1.0.0",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Pointeger\\AttributeFinder\\": ""
+    }
+  }
+}
+
+
