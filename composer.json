@@ -1,6 +1,6 @@
 {
-  "name": "pointeger/magento2-module-attribute",
-  "description": "The pointeger module.",
+  "name": "pointeger/magento2-module-attribute-finder",
+  "description": "The product attribute extension adds a search bar on dropdown attribute which makes it easier for admin to find an attribute value on product edit page.",
   "require": {
     "php": ">=7.3",
     "magento/framework": ">=103"
@@ -23,3 +23,4 @@
     }
   }
 }
+
