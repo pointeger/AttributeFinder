@@ -33,7 +33,7 @@ class ProductEavAttributeModifier
             if ($attribute->getData(
                     'enable_option_search'
                 ) && $returnValue['arguments']["data"]["config"]['formElement'] == 'select') {
-                $returnValue['arguments']["data"]["config"]['component'] = 'Pointeger_ProductAttribute/js/form/element/ui-select';
+                $returnValue['arguments']["data"]["config"]['component'] = 'Pointeger_AttributeFinder/js/form/element/ui-select';
                 $returnValue['arguments']["data"]["config"]['filterOptions'] = true;
                 $returnValue['arguments']["data"]["config"]['multiple'] = false;
                 $returnValue['arguments']["data"]["config"]['disableLabel'] = true;
