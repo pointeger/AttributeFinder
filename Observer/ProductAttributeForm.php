@@ -44,7 +44,7 @@ class ProductAttributeForm implements ObserverInterface
             'select',
             [
                 'name' => 'enable_option_search',
-                'label' => __('Searchable on Product Edit Page'),
+                'label' => __('Searchable Options'),
                 'note' => __(
                     'Select "Yes" to make this attribute options searchable on product edit page (only if this attribute is of "Select" type).'
                 ),
