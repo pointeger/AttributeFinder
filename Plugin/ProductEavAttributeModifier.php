@@ -29,10 +29,11 @@ class ProductEavAttributeModifier
         $sortOrder
     ) {
         $returnValue = $proceed($attribute, $groupCode, $sortOrder);
+
         try {
-            if ($attribute->getData(
-                    'enable_option_search'
-                ) && $returnValue['arguments']["data"]["config"]['formElement'] == 'select') {
+            if($attribute->getData('edit_lock') != 1 && $attribute->getData('enable_option_search')
+                && $returnValue['arguments']["data"]["config"]['formElement'] == 'select')
+            {
                 $returnValue['arguments']["data"]["config"]['component'] = 'Pointeger_AttributeFinder/js/form/element/ui-select';
                 $returnValue['arguments']["data"]["config"]['filterOptions'] = true;
                 $returnValue['arguments']["data"]["config"]['multiple'] = false;
@@ -40,6 +41,7 @@ class ProductEavAttributeModifier
                 $returnValue['arguments']["data"]["config"]['elementTmpl'] = 'ui/grid/filters/elements/ui-select';
             }
         } catch (\Exception $exception) {
+            $exception->getMessage();
         }
         return $returnValue;
     }
